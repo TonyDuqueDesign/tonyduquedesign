@@ -1,0 +1,329 @@
+/* /////////////////////////////////////////  */
+/* PAGE FORMATING */
+/* TEXT FORMATTING   */
+* {
+  font-size: 100%;
+  box-sizing: border-box
+}
+body {
+  font-family: "Montserrat", verdana, sans-serif;
+  background-color: #001118;
+  color: white;
+  margin: 0;
+  border: 0px solid yellow;
+}
+/* containers //////////////////////////////////*/
+.wrapper {
+  align-content: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  height: 100%;
+  border: 0px solid blue;
+}
+.container {
+  align-content: center;
+  width: 100%;
+  border: 2px solid magenta;
+}
+.text-container {
+  max-width: 1200px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 3%;
+  align-content: center;
+  border: 0px solid greenyellow;
+}
+div.newspaper {
+  margin: 25px 0 25px 0;
+  /* COUNT */
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  /* GAP WIDTH */
+  -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 50px; /* Firefox */
+  column-gap: 50px;
+  -webkit-column-rule: 1px solid #838383; /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid #838383; /* Firefox */
+  column-rule: 1px solid #838383;
+
+  border: 0px solid red;
+}
+.slideshow-container {
+  width: 100%;
+  max-width: 960px;
+  align-self: center;
+  border: 1px solid white;    
+  margin: 0 0 0 0;
+}
+.slides {
+  align-self: center;
+}
+
+
+.titletext {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 160%;
+  border: 0px solid rgb(0, 255, 234);    
+}
+.titletd {
+  font-family: 'helvetica new', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 200%;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 170%;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3 {
+  margin: 0;
+  color: rgb(108, 181, 209);
+  padding: 0;
+  font-size: 120%;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.foottext {
+  font-family: 'arial narrow', sans-serif;
+  font-size: 75%;
+}
+img {
+  vertical-align: middle;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;  
+  letter-spacing: 0.03em;
+}
+/* /////////////////////////////////////////  */
+/* w3c schools */
+div.gallery {
+  border: 1px solid #fff;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 6px;
+  float: left;
+  width: 49.99999%;
+}
+/* /////////////////////////////////////////  */
+/* NAV MENU FORMATTING */
+div.sticky {
+    border-top: 1px solid white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    background-color: #152c60; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#152c60, #001118); /* Standard syntax (must be last) */
+  }
+ul.topnav {
+  width: 100%;
+  max-width: 1200px;
+  vertical-align: middle;
+  text-align: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  border: 0px solid white;
+  background-color: #152c60; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#152c60, #001118); /* Standard syntax (must be last) */
+}
+ul.topnav li {
+  float: right;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 0px 0px 0 0px;
+  background-color: #152c60; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#152c60, #001118); /* Standard syntax (must be last) */
+}
+ul.topnav li a {
+  height: 42px;
+  line-height: 10px;
+  display: block;
+  color: white;
+  margin: 0px 30px 0 0;
+/*  padding: 10px 5px 4px 5px;*/
+  padding: 14px 20px 0px 20px;
+  text-decoration: none;
+}
+ul.topnav li a:hover:not(.active) {
+  color: black;
+  background-color: cyan;
+}
+ul.topnav li a.active {
+  color: silver;
+  background-color: #269;
+}
+/* For browsers that do not support gradients */
+
+
+/* /////////////////////////////////////////  */
+/* MEDIA QUERY */
+
+@media screen and (max-width: 600px) 
+{ 
+  div.newspaper {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  }  
+    div.sticky {
+        position: -webkit-sticky;
+        position: unset;
+        top: 0;
+        padding: 0;
+    }
+    ul.topnav li {
+        mask-image: none;
+        margin: 0px 0px;
+        background-color: #011118; /* For browsers that do not support gradients */
+        float: none;
+    }
+    ul.topnav li a {
+      float: none;
+      background-image: none;
+      width: 100%;
+      color: white;
+      background-color: #011118; /* For browsers that do not support gradients */
+  }
+  ul.topnav li a:hover:not(.active) {
+      color: black;
+      font-size: 120%;
+      background-color: aqua;
+  }
+  ul.topnav li a.active {
+      color: silver;
+      background-color: rgb(99, 99, 99);
+  }
+}
+    
+
+  @media only screen and (max-width: 1100px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+    div.newspaper {
+      -webkit-column-count: 1; /* Chrome, Safari, Opera */
+      -moz-column-count: 1; /* Firefox */
+      column-count: 1;
+    }  
+  }
+ 
+
+  @media only screen and (max-width: 600px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+/*  position: absolute;
+  margin-top: -22px;
+  top: 50%;
+
+  background-color: black;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  user-select: none;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #black;
+  border-radius: 50%;
+  border: 1px solid white;
+*/
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border: 1px solid white;
+}
+
+/* Position the "next button" to the right
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;}
+ */
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, 
+.next:hover {
+  background-color: rgb(109, 109, 109);
+  color: white;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  color: black;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;}
+
+.active,
+.dot:hover {
+  background-color: rgb(156, 134, 85);
+  color: white;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
