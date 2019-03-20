@@ -75,6 +75,11 @@ div.newspaper {
   font-style: normal;
   font-size: 200%;
 }
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  color:rgb(108, 181, 209);
+}
 h1 {
   margin: 0;
   padding: 0;
@@ -91,7 +96,11 @@ h2, h3 {
   font-style: normal;
   font-family: 'Montserrat', sans-serif;
 }
-
+.mail {
+  font-family: 'andale mono', courier, monospace;
+  font-style: italic;
+  color: rgb(197, 180, 143);
+}
 .foottext {
   font-family: 'arial narrow', sans-serif;
   font-size: 75%;
